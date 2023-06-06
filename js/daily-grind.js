@@ -11,18 +11,26 @@ let myDate = new Date();
 let today = myDate.getDay();
 
 function coffeTemplate(coffee) {
-    return `
+
+ /*
+return `
     <p>
     <img src="${coffee.image}" alt="${coffee.alt}" id="coffee" />
     <strong class="feature">${coffee.day} Coffee Special:</strong> ${coffee.day} daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>
     <p>
 
     `; 
+    */
 }
+
+return `<p>
+<img src="${coffee.pic}" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
+<strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">${coffee.name}</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
+`;
 
 switch(today) {
     case 1:
-        today = "Monday;";
+        today = "Monday";
         coffee = { 
             name: "Bubble Tea", 
             color: "Pink ",
@@ -40,10 +48,13 @@ switch(today) {
         break;
 
     default:
-        today = "Not sure what day it is. Error: There is an error";
+        today = "Not sure what day it is";
+        alert("falling into alert!");
 }
 
-document.getElementById("coffee-cup").innerHTML = coffeTemplate(coffee)
+alert(coffeeTemplate(coffee));
+
+document.getElementById("coffee-cup").innerHTML = coffeTemplate(coffee); 
 
 // How to set an object 
 coffee = { 
