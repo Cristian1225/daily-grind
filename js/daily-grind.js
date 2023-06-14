@@ -109,7 +109,7 @@ switch(today){
           color: "purple",
           pic: "images/Frappaccino.jpg",
           alt: "A picture of a slushy coffee",
-          day: "Wednesday",
+          day: "Friday",
           desc:`Cooler Crispy!`
         }
         break;
@@ -133,8 +133,8 @@ switch(today){
           color: "khaki",
           pic: "images/caramel-latte.jpg",
           alt: "A picture of a sweet flavory caramel coffee",
-          day: "Wednesday",
-          desc:`Richie Rich!`
+          day: "Sunday",
+          desc:`Carmel Goodness!`
         }
         break;
 
